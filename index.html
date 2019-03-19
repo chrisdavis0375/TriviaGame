@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Game Trivia!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+    <div class = "container">
+
+        <div class = "row">
+
+        <div class = "col-md-2"></div>
+
+        <div class = "jumbotron col-md-8">
+            <h1>Video Game Trivia!</h1>
+            <p>Time Remaining: <span id = "timerDisplay">0</span></p>
+            <p id = "instructions">Once you hit start you will have 30 seconds to answer all 7 questions!</p>
+        </div>
+
+        <div class = "col-md-2"></div>
+
+    </div>
+
+    <div class = "row">
+
+        <div class = "col-md-3"></div>
+
+        <div  id = "questions" class = "col-md-6">
+            <h5>1.) In what year did Nintendo release its first game console in North America?</h5>
+            <input name = "question1" class = "incorrect" type = "radio">2000</input>
+            <input name = "question1" class = "correct" type = "radio">1985</input>
+            <input name = "question1" class = "incorrect" type = "radio">1996</input>
+            <input name = "question1" class = "incorrect" type = "radio">2003</input>
+
+            <hr>
+
+            <h5>2.) Which PC games release date was delayed because of a hidden picture of a developers ass?</h5>
+            <input name = "question2" class = "incorrect" type = "radio">Mass Effect</input>
+            <input name = "question2" class = "incorrect" type = "radio">The Last of Us</input>
+            <input name = "question2" class = "incorrect" type = "radio">Uncharted 4</input>
+            <input name = "question2" class = "correct" type = "radio">Halo 2</input>
+
+            <hr>
+
+            <h5>3.) Who is the brother of Liquid Snake?</h5>
+            <input name = "question3" class = "correct" type = "radio">Solid Snake</input>
+            <input name = "question3" class = "incorrect" type = "radio">Venom Snake</input>
+            <input name = "question3" class = "incorrect" type = "radio">Gray Fox</input>
+            <input name = "question3" class = "incorrect" type = "radio">Star Fox</input>
+
+            <hr>
+
+            <h5>4.) What is the main characters name in the "God of War" series?</h5>
+            <input name = "question4" class = "incorrect" type = "radio">Boy</input>
+            <input name = "question4" class = "incorrect" type = "radio">Loki</input>
+            <input name = "question4" class = "correct" type = "radio">Kratos</input>
+            <input name = "question4" class = "incorrect" type = "radio">Ares</input>
+
+            <hr>
+
+            <h5>5.) What does "Atari" stand for?</h5>
+            <input name = "question5" class = "incorrect" type = "radio">Pacman</input>
+            <input name = "question5" class = "correct" type = "radio">Success</input>
+            <input name = "question5" class = "incorrect" type = "radio">Joystick</input>
+            <input name = "question5" class = "incorrect" type = "radio">Win</input>
+
+            <hr>
+
+            <h5>6.) What was Marios original name?</h5>
+            <input name = "question6" class = "incorrect" type = "radio">Koomba Stomper</input>
+            <input name = "question6" class = "incorrect" type = "radio">Plumber Man</input>
+            <input name = "question6" class = "incorrect" type = "radio">Wario</input>
+            <input name = "question6" class = "correct" type = "radio">Jumpman</input>
+
+            <hr>
+
+            <h5>7.) What is Pokemon called in Japan?</h5>
+            <input name = "question7" class = "correct" type = "radio">Pocket Monsters</input>
+            <input name = "question7" class = "incorrect" type = "radio">Pokemon</input>
+            <input name = "question7" class = "incorrect" type = "radio">Digimon</input>
+            <input name = "question7" class = "incorrect" type = "radio">Bakugan</input>
+
+            <hr>
+
+        </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-6"></div>
+        <div class = "col-md-1">
+            <button id = "start">Start</button>
+        </div>
+        <div class = "col-md-5"></div>
+    </div>
+
+    <div id = "end" class = "row">
+        <div class = "col-md-4"></div>
+        <div class = "col-md-4">
+            <p>Correct: </p>
+            <p>Incorrect: </p>
+            <p>Unanswered: </p>
+            <button>Try again?</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
